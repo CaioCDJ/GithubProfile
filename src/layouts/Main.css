@@ -1,0 +1,12 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro div{
+    height: 20vh;
+}
+.intro img{
+    height: 100%;
+}
