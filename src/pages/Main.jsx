@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from "react";
+
 import ProfileInfo from "../components/ProfileInfo";
 import Repos from "../components/Repos";
 import githubApi from "../services/githubApi";
+import Footer from '../components/Footer.jsx';
 
 import "./Main.css"
+import Followers from "../components/Followers";
+import { useParams } from "react-router-dom";
 
 export default function Main(){
 
+    let {name} = useParams();
+
+    if(name == undefined || null) return""
 
     const [profile,setProfile] = useState({});
 
     useEffect(()=>{
 
-        githubApi("https://api.github.com/users/CaioCDJ")
+        githubApi(`https://api.github.com/users/${name}`)
         .then(response =>{
             setProfile(response);
         })
@@ -20,18 +27,14 @@ export default function Main(){
 
     return(
         <>
-            <div className="fullScreen intro">
-
-                <div>
-                    <img src={profile.avatar_url} alt="" />
-                </div>
-                <h2>{profile.login}</h2>
-            </div> 
             
             <ProfileInfo profile={profile}/>
 
-            {/** marquee kek */}
+            <Followers url={profile.followers_url} />
+
             <Repos url={profile.repos_url}/>
+            
+            <Footer />
         </>
     )
 }

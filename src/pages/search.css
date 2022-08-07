@@ -1,0 +1,29 @@
+.search{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search >*{
+    margin: 30px;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+.search form input{
+    color: #141414;
+    height: 30px;
+    border-radius: 5px;
+    width: 60vh;
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+.search img{
+
+    height: 50vh;
+}

@@ -5,10 +5,32 @@
     border:0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #9aa5ce;
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(36,40,59);
+ 
+}
+
+h2{
+    color: #7aa2f7;
+}
+a{
+   color: #bb9af7
 }
 
 .fullScreen{
 
     height: 100vh;
     width: 100%;
+}
+
+.flexCol{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
 }

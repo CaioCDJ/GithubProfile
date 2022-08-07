@@ -1,19 +1,47 @@
-.info{
+.profile{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profilePic{
+    height: 35vh;
+    width: 35vh;
+    border-radius: 80%;
+}
+
+strong{
+    color: #c0caf5;
+}
+
+.profile .left{
+    align-items: center;
+    color: #c0caf5;
+    width: 35%;
+}
+
+.profile .left >*{
+    margin: 10px;   
+}
+
+.profile .right{
+    width: 65%;
     display: flex;
     flex-direction: row;
 }
-
-.info div{
+.profile .right ul{
     width: 50%;
-    height: 100%;
+    font-size: 1.3rem;
 }
+ul >*{
 
-.info div ul{
+    margin:10px
+}
+.follow{
     display: flex;
-    flex-direction: row;
 }
-
-
-.info div ul li{
-    
+.follow >*{
+    margin: 3px;
 }

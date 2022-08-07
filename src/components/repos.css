@@ -1,0 +1,7 @@
+
+.repos{
+    display: grid;
+    grid-template-columns: 70vh 70vh 70vh;
+    padding: 10px;
+    justify-content: center;
+}

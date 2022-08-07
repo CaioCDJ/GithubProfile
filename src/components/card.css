@@ -1,3 +1,51 @@
 .card{
 
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(120deg,rgba(36,40,59,1) 6%, rgba(86,95,137,1) 100%); 
+}
+
+.card > *{
+    margin:10px
+}
+
+.card .lang{
+    color: #73daca;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.card h4{
+    
+    font-size: 1.2rem;
+}
+
+.card .topics{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.card .topics div{
+
+    padding: 3px;
+    background-color: #7aa2f733;
+    color: #24283b;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.card .topics div:hover{
+
+    background: #7aa2f76e;
+}
+.card .topics a{
+    text-decoration: none;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }

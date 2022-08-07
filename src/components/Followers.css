@@ -1,0 +1,19 @@
+.followers{
+    height: 50vh;
+}
+.followers >*{
+    margin: 10px;
+}
+.followers .grid{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 5px;
+}
+
+.followers .avatar{
+    margin: 5px;
+    height: 4.0rem;
+    border-radius: 100%;
+}
+

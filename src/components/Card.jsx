@@ -14,11 +14,29 @@ const Card = props =>{
 
     return (
         <div className="card" key={props.repoInfo.id}>
-            <div>Language/watchers</div>
+            <div className="lang">
+                {props.repoInfo.language}
+            </div>
+            
             <h4>{props.repoInfo.name}</h4>
+
             <div>
                 {props.repoInfo.description}
             </div>
+
+            <div className="topics">
+                {props.repoInfo.topics.map(topic=>{
+                    
+                    const url = `https://github.com/topics/${topic}`
+                    
+                    return(
+                        <a href={url}>
+                            <div className="topic" title="github Topic">{topic}</div>
+                        </a>
+                    )
+                })}
+            </div>
+
             <div>
                 <a href={props.repoInfo.html_url}>Github Page</a>
             </div>

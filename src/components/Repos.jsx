@@ -2,17 +2,9 @@ import React, { useEffect, useState } from "react";
 import githubApi from "../services/githubApi";
 import Card  from './Card';
 
-function Cards(json){
+import jsonToArray from "../helpers/jsonToArray";
 
-    const Cards = [];
-
-    for (let index = 0; index < json.length; index++) {
-        
-        Cards.push(json[index]);
-    }
-
-    return Cards;
-}
+import "./repos.css";
 
 const Repos = props =>{
 
@@ -27,7 +19,6 @@ const Repos = props =>{
         githubApi(props.url)
         .then(res=>{
 
-            console.log(res.length);
             setRepos(res)
 
         }).catch(err=>console.log(err.message))
@@ -37,12 +28,16 @@ const Repos = props =>{
 
     return (
 
-        <div className="repos">
+        <div className="flexCol">
+            <h2>-- Repositories --</h2>
+
+            <div className="repos">
             {
-                Cards(repos).map(res=>{
-                    return <Card repoInfo={res}/>
-                })                
-            }
+                    jsonToArray(repos).map(repo=>{
+                        return <Card repoInfo={repo} key={repo.id} />
+                    })                
+                }
+            </div>
         </div>
     )
 

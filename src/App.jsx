@@ -1,11 +1,10 @@
-import reactLogo from './assets/react.svg'
-import ProfileInfo from './components/ProfileInfo'
-import Main from './layouts/Main'
+import SearchPage from './pages/Search'
+import ReactRoutes from "./Rotas";
 
 function App() {
 
   return (
-    <Main/>
+    <ReactRoutes/>
     )
 }
 
