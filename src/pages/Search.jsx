@@ -21,7 +21,9 @@ const searchPage = props =>{
 
         <>
             <main className="search">
+               
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+               
                 <h1>Github Profile</h1>
                
                 <form onSubmit={handler}>
