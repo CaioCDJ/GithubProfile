@@ -3,7 +3,7 @@
 <h1 align="center">Github Profile</h1>
 
 
-Uma site que utiliza as informações da api aberta do github para gerar uma pagina contendo informações de um usuario a partir do seu nickName
+Um site que utiliza as informações da api aberta do github para gerar uma pagina contendo informações de um usuario a partir do seu nickName
 
 
 ## Instruções 
